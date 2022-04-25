@@ -3,52 +3,110 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Top</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   </head>
   <body>
     <div class="container">
       <header class="c-header" id="header">
         <div class="l-container">
-          <h1 class="c-header__logo"><a class="logo-image" href="/"><img src="/img/common/logo.png" alt="logo alt"></a></h1>
-          <nav class="c-header__nav">
-            <ul class="c-header__nav__menu nav-menu">
-              <li class="nav-menu__item"><a href="#">About</a></li>
-              <li class="nav-menu__item"><a href="/news/">News</a></li>
-              <li class="nav-menu__item"><a href="#">Info</a></li>
-              <li class="nav-menu__item"><a href="#">TOP</a></li>
+          <h1 class="c-header__logo"><a class="logo-image" href="/"><img src="assets/images/logo.png" alt="logo alt"></a></h1>
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-menu_item is_active"><a href="#">Về Chúng Tôi</a></li>
+              <li class="nav-menu_item"><a href="/news/">Khóa Học</a></li>
+              <li class="nav-menu_item"><a href="#">Blog</a></li>
+              <li class="nav-menu_item"><a href="#">Ebook</a></li>
+              <li class="nav-menu_item"><a href="#">Video</a></li>
             </ul>
           </nav>
         </div>
       </header>
       <main class="l-main">
-        <ul class="c-article">
-          <li>
-            <div class="c-article__item">
-              <div class="c-article__item__inner">
-                <h2>TITLE 01</h2>
-                <p>LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM</p>
-              </div>
+        <div class="c-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slider video">
+              <video src="https://ak2.picdn.net/shutterstock/videos/34123252/preview/stock-footage-coworkers-discussing-in-the-future-of-their-company-over-several-charts-and-graphs-business.mp4" autoplay muted></video>
             </div>
-          </li>
-          <li>
-            <div class="c-article__item">
-              <div class="c-article__item__inner">
-                <h2>TITLE 02</h2>
-                <p>LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM</p>
+          </div>
+        </div>
+        <div class="c-learn">
+          <div class="c-learn_banner"><img class="lazy-loaded-image lazy" data-src="https://picsum.photos/1000/300" width="1000" height="300"></div>
+          <ul>
+            <li>
+              <div class="img"><img class="lazy-loaded-image lazy" data-src="https://picsum.photos/958/627" atl="" width="958" height="627"></div>
+              <div class="content">
+                <h3>KHÓA HỌC MỚI</h3>
+                <p>Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.</p><a href="#">Nhận Ebook Tại Đây</a>
               </div>
-            </div>
-          </li>
-        </ul>
-        <section class="p-top__intro">
-          <h2 class="title">Lorem ipsum dolor sit</h2>
-          <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Non debitis quisquam sit fugit eum soluta nisi ipsam,<br>culpa facilis optio pariatur labore aliquam, doloremque magni reprehenderit, in odit? Est, reiciendis.</p>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.<span>AAAAAAA</span>Ipsum et asperiores magni rerum non,<small>BBBBBBB</small>ad praesentium maiores! Fuga molestiae doloremque voluptatibus distinctio impedit possimus sint, a ipsa quas eum corrupti?</p>
-        </section>
+            </li>
+            <li>
+              <div class="img"><img class="lazy-loaded-image lazy" data-src="https://picsum.photos/958/627" atl="" width="958" height="627"></div>
+              <div class="content">
+                <h3>KHÁM PHÁ THƯ VIỆN EBOOK</h3>
+                <p>Bỏ túi những hướng dẫn chất lượng về kiến thức chuyên môn, định hướng sự nghiệp từ ebook miễn phí của Tomorrow Marketers</p><a href="#">Nhận Ebook Tại Đây</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="c-advise">
+          <div class="c-advise_inner">
+            <h3>Bạn chưa biết liệu khoá học có phù hợp <br> với mình hay không?</h3><a href="#">ĐĂNG KÝ TƯ VẤN</a>
+          </div>
+        </div>
       </main>
-      <footer class="c-footer"></footer>
+      <footer class="c-footer">
+        <div class="l-container">
+          <dl>
+            <dt>Giới thiệu</dt>
+            <dd>Future Brand Việt Nam cung cấp các khóa học trực tuyến e-learning và các nội dung chuyên về lĩnh vực Branding, Marketing</dd>
+          </dl>
+          <dl>
+            <dt>Danh mục</dt>
+            <dd><a href="#">Khóa học</a></dd>
+            <dd><a href="#">Blog Brannding</a></dd>
+            <dd><a href="#">Blog Marketing</a></dd>
+            <dd><a href="#">Ebook</a></dd>
+          </dl>
+          <dl>
+            <dt>Trợ giúp</dt>
+            <dd><a href="#">Đăng ký tài khoản</a></dd>
+            <dd><a href="#">Điều khoản sử dụng</a></dd>
+            <dd><a href="#">Quyền riêng tư</a></dd>
+          </dl>
+          <dl>
+            <dt>Liên hệ</dt>
+            <dd>177 Nguyễn Thị Sáu, Thành Lộc, quận 12, thành phố Hồ Chí Minh</dd>
+            <dd>Điện thoại: 0795263260</dd>
+            <dd>Email: futurebrandvn@gmail.com</dd>
+          </dl>
+        </div>
+      </footer>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/common.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      $(function () {
+        var mySwiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            direction: 'horizontal',
+            loop: true,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            autoplay: 3000,
+            lazy: true,
+        });
+      
+      });
+      
+    </script>
   </body>
 </html>

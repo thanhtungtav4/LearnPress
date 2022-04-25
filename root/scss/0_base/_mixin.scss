@@ -48,19 +48,19 @@
 }
 @mixin flex-center {
 	display: flex;
-    align-items: center;
-    justify-content: center;
-	flex-wrap: wrap;	
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 @mixin flex-icenter {
 	display: flex;
-    align-items: center;	
+	align-items: center;
 }
 @mixin flex-jcenter {
 	display: flex;
-    justify-content: center;	
+	justify-content: center;
 }
 @mixin flex-jbetween {
 	display: flex;
-    justify-content: space-between;	
+	justify-content: space-between;
 }
