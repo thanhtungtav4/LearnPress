@@ -3,8 +3,34 @@
 ------------------------------------------------------------*/
 .c-header {
 	width: 100%;
-	padding: 50px 0;
-	text-align: center;
-	background: $color3;
+	background-color: $color-main;
 	transition: 0.3s ease-in-out;
+	padding: 25px 0;
+	.l-container, .nav-menu{
+		@include flex-jbetween;
+		align-items: center;
+	}
+	.nav-menu{
+		&_item{
+			font-size: 18px;
+			line-height: 1.2;
+			a{
+				text-decoration: none;
+				color: white;
+			}
+			&.is_active{
+				a{
+					color: black;
+				}
+			}
+			&:not(:last-child){
+				padding-right: 70px;
+			}
+			&:hover{
+				a{
+					color: black;
+				}
+			}
+		}
+	}
 }

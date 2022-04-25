@@ -6,22 +6,50 @@ block vars
   -keywords     = ''
   -pageID       = 'top'
   -path         = ''
+block before_page
+  link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+block after_page
+  script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+  script.
+    $(function () {
+      var mySwiper = new Swiper('.swiper', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          direction: 'horizontal',
+          loop: true,
+          pagination: '.swiper-pagination',
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          autoplay: 3000,
+          lazy: true,
+      });
+
+    });
 
 block container
-  ul.c-article
-    li
-      +article('TITLE 01', 'LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM')
-    li
-      +article('TITLE 02', 'LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM')
-  section.p-top__intro
-    h2.title Lorem ipsum dolor sit
-    p.description Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      br
-      |Non debitis quisquam sit fugit eum soluta nisi ipsam,
-      br
-      |culpa facilis optio pariatur labore aliquam, doloremque magni reprehenderit, in odit? Est, reiciendis.
-    p.description Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      span AAAAAAA
-      |Ipsum et asperiores magni rerum non,
-      small BBBBBBB
-      |ad praesentium maiores! Fuga molestiae doloremque voluptatibus distinctio impedit possimus sint, a ipsa quas eum corrupti?
+  .c-slider.swiper
+    .swiper-wrapper
+      .swiper-slider.video
+         video(src="https://ak2.picdn.net/shutterstock/videos/34123252/preview/stock-footage-coworkers-discussing-in-the-future-of-their-company-over-several-charts-and-graphs-business.mp4" autoplay muted)
+  .c-learn
+    .c-learn_banner
+      img.lazy-loaded-image.lazy(data-src="https://picsum.photos/1000/300" width="1000" height="300")
+    ul
+      li
+        .img
+          img.lazy-loaded-image.lazy(data-src="https://picsum.photos/958/627" atl=""  width="958" height="627")
+        .content
+          h3 KHÓA HỌC MỚI
+          p Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.Khoá học cung cấp tư duy marketing nền tảng dành cho người mới bắt đầu, giúp hệ thống hoá kiến thức chuyên môn và định hướng lộ trình phát triển nghề nghiệp.
+          a(href="#") Nhận Ebook Tại Đây
+      li
+        .img
+          img.lazy-loaded-image.lazy(data-src="https://picsum.photos/958/627" atl="" width="958" height="627")
+        .content
+          h3 KHÁM PHÁ THƯ VIỆN EBOOK
+          p Bỏ túi những hướng dẫn chất lượng về kiến thức chuyên môn, định hướng sự nghiệp từ ebook miễn phí của Tomorrow Marketers
+          a(href="#") Nhận Ebook Tại Đây
+  .c-advise
+    .c-advise_inner
+      h3 Bạn chưa biết liệu khoá học có phù hợp <br> với mình hay không?
+      a(href='#') ĐĂNG KÝ TƯ VẤN
