@@ -15,3 +15,10 @@ let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
 lazyImages.forEach(function(lazyImage) {
     lazyImageObserver.observe(lazyImage);
 });
+
+function toggleMenu(){
+    var menu = document.getElementsByClassName("nav-menu");
+    menu[0].classList.toggle("js-active");
+    var menuIcon = document.getElementsByClassName("nav-menu_mobile");
+    menuIcon[0].classList.toggle("js-active");
+}

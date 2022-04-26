@@ -38,7 +38,7 @@
 					margin-bottom: 3rem;
 					text-align: center;
 					@include sp{
-						font-size: 3rem;
+						font-size: 2.5rem;
 						margin: 2rem 0 1rem;
 					}
 				}
@@ -60,6 +60,10 @@
 					transition: 0.3s ease-in-out;
 					&:hover{
 						transform: translateY(-8px);
+					}
+					@include sp{
+						padding:1rem 3rem;
+						font-size: 1.5rem;
 					}
 				}
 			}
@@ -91,11 +95,18 @@
 	padding: 73px 0 154px;
 	background-color: $color-main;
 	width: 100%;
+	@include sp{
+		padding: 50px 0;
+	}
 	&_inner{
 		text-align: center;
 		h3{
 			font-weight: 700;
 			font-size: 3rem;
+			@include sp{
+				font-size: 2.5rem;
+				padding: 0 15px;
+			}
 		}
 		a{
 			display: block;
@@ -114,6 +125,10 @@
 			transition: 0.3s ease-in-out;
 			&:hover{
 				transform: translateY(-8px);
+			}
+			@include sp{
+				font-size: 2rem;
+				padding: 12px 50px;
 			}
 		}
 	}

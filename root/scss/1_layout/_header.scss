@@ -6,11 +6,16 @@
 	background-color: $color-main;
 	transition: 0.3s ease-in-out;
 	padding: 25px 0;
+	position: relative;
+	@include sp{
+		padding: 15px 0;
+	}
 	.l-container, .nav-menu{
 		@include flex-jbetween;
 		align-items: center;
 	}
 	.nav-menu{
+		transition: 0.3s ease-in-out;
 		&_item{
 			font-size: 18px;
 			line-height: 1.2;
@@ -31,6 +36,48 @@
 					color: black;
 				}
 			}
+			@include sp{
+				padding: 8px 0;
+			}
 		}
+		@include sp{
+			display: none;
+		}
+		&.js-active{
+			@include sp{
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				position: absolute;
+				left: 0;
+				z-index: 99;
+				background-color: $color-main;
+				width: 100vw;
+				height: 100vh;
+				top: 73px;
+				justify-content: flex-start;
+				padding: 15px;
+			}
+		}
+		&_mobile{
+			display: none;
+			transform: scale(1.1);
+			@include sp{
+				display: flex;
+				align-items: center;
+			}
+			#close{
+				display: none;
+			}
+			&.js-active{
+				#open{
+					display: none;
+				}
+				#close{
+					display: block;
+				}
+			}
+		}
+
 	}
 }
