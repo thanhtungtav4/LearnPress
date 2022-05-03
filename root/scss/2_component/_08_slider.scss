@@ -2,28 +2,17 @@
 	Slider
 ------------------------------------------------------------*/
 .swiper{
-	width: 100%;
-	height: auto;
+	&-container{
+		width: 100%;
+	}
 	&-slider{
-		overflow: hidden;
-		&.video{
-			video {
-				margin-left: calc((100vw - (100vh * 1.7))/2);
-				margin-right: calc((100vw - (100vh * 1.7))/2);
-				min-height: 100vh;
-				min-width: 100vw;
-				@include sp{
-					min-height: auto;
-					height: auto;
-					margin-left: -27%;
-					margin-right: -27%;
-				}
-			}
-			@media (min-aspect-ratio: 16/9) {
-				video {
-					margin-left: 0;
-				}
-			}
-		}
+		background-size: cover;
+		background-position: 50%;
+		min-height: 20vh;
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 	}
 }

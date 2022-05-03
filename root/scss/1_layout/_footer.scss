@@ -5,7 +5,6 @@
 	width: 100%;
 	padding: 100px 0 150px;
 	text-align: center;
-	background: #AFA6A6;
 	color: black;
 	@include sp{
 		padding: 50px 0;
@@ -19,6 +18,9 @@
 			color: black;
 			text-decoration: none;
 			font-size: 1.8rem;
+			&:hover{
+				color: $color-main;
+			}
 		}
 		dl{
 			width: 25%;
@@ -32,6 +34,7 @@
 		dt{
 			font-size: 2.5rem;
 			margin-bottom: 1.5rem;
+			color: $color-main;
 			@include sp{
 				margin-bottom: 0.5rem;
 			}
