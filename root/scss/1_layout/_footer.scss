@@ -3,7 +3,8 @@
 ------------------------------------------------------------*/
 .c-footer {
 	width: 100%;
-	padding: 100px 0 150px;
+	padding: 50px 0 150px;
+	border-top: 4px solid $color-main;
 	text-align: center;
 	color: black;
 	@include sp{
